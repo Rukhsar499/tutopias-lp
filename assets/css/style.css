@@ -185,7 +185,7 @@ a {
     border-radius:25px;
 }
 .form-wrappers{
-   background-color:#ffffff77;
+   background-color:#f3cf3f9f;
     padding: 10px;
     display: inline-block;
     border-radius:25px;
@@ -1196,8 +1196,8 @@ h2 {
 
 .btn-close {
   position: absolute;
-  top: -4%;
-  right: -3%;
+  top: -2%;
+  right: 4%;
   /* background: #FDCD10;
    background: linear-gradient(83deg, rgba(253, 205, 16, 1) 0%, rgba(255, 233, 147, 1) 50%); */
   background-color: #FDCD10;

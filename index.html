@@ -59,13 +59,13 @@
             <div class="admission-form">
               <h4 style="color: #2C6BB5;" class="mb-4">Admission Open 2026</h4>
 
-              <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="tel" placeholder="Phone No">
-                <input type="text" placeholder="Location">
+              <form class="enquiryForm">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone"  placeholder="Phone No">
+                <input type="text" name="location" placeholder="Location">
 
-                <textarea placeholder="Message"></textarea>
+                <textarea placeholder="Message" name="message"></textarea>
 
                 <button type="submit">
                   <span class="arrow">➜</span>
@@ -679,18 +679,18 @@
         </div>
         <div class="col-lg-1 col-md-1 col-1"></div>
         <div class="col-lg-4 col-md-4 col-12">
-          <div class="form-wrappers">
+           <div class="form-wrappers">
 
             <div class="admission-form">
               <h4 style="color: #2C6BB5;" class="mb-4">Admission Open 2026</h4>
 
-              <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="tel" placeholder="Phone No">
-                <input type="text" placeholder="Location">
+              <form class="enquiryForm">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone"  placeholder="Phone No">
+                <input type="text" name="location" placeholder="Location">
 
-                <textarea placeholder="Message"></textarea>
+                <textarea placeholder="Message" name="message"></textarea>
 
                 <button type="submit">
                   <span class="arrow">➜</span>
@@ -897,50 +897,35 @@
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+    
         <div class="modal-body">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <form class="enquiryForm">
-            <div class="enquiry-card" style="border-radius:0px;">
-              <div class="text-center">
-                <h5 class="enquiry-title">Enquiry Now!</h5>
-              </div>
-              <div class="form-box">
-                <input type="text" class="form-control" placeholder="Full Name *" name="name" required>
-                <input type="text" class="form-control" placeholder="Phone Number *" name="phone" maxlength="10"
-                  pattern="[6-9]{1}[0-9]{9}" oninput="this.value = this.value.replace(/[^0-9]/g, '')" autocomplete="off"
-                  required>
+          <div class="form-wrappers">
 
-                <select class="form-select" name="board" required>
-                  <option value="">Select Board*</option>
-                  <option value="WB English Medium">WB English Medium</option>
-                  <option value="WB Bengali Medium">WB Bengali Medium</option>
+            <div class="admission-form">
+              <h4 style="color: #2C6BB5;" class="mb-4">Admission Open 2026</h4>
 
-                  <option value="ICSE">ICSE</option>
-                  <option value="CBSE">CBSE</option>
-                </select>
+              <form class="enquiryForm">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone"  placeholder="Phone No">
+                <input type="text" name="location" placeholder="Location">
 
-                <select class="form-select" name="class_name" required>
-                  <option value="">Select Class*</option>
-                  <option value="Class 7">Class 7</option>
-                  <option value="Class 8">Class 8</option>
-                  <option value="Class 9">Class 9</option>
-                  <option value="Class 10">Class 10</option>
-                  <option value="Class 11">Class 11</option>
-                  <option value="Class 12">Class 12</option>
-                </select>
+                <textarea placeholder="Message" name="message"></textarea>
 
-                <input type="date" class="form-control" name="date" id="date" required>
-                <input type="time" class="form-control" name="time" id="time" required>
+                <button type="submit">
+                  <span class="arrow">➜</span>
+                  SUBMIT
+                </button>
+              </form>
 
-              </div>
-              <button class="submit-btn mt-3">Submit</button>
             </div>
-          </form>
+
+          </div>
 
         </div>
 
-      </div>
+   
     </div>
   </div>
 
