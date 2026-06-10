@@ -26,4 +26,3 @@ dots.forEach((dot, index) => {
 
 // Initial display
 showSlide(currentSlide);
-

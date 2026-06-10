@@ -184,6 +184,12 @@ a {
     display: inline-block;
     border-radius:25px;
 }
+.form-wrappers{
+   background-color:#ffffff77;
+    padding: 10px;
+    display: inline-block;
+    border-radius:25px;
+}
 
 .admission-form{
     background:#ececec;
