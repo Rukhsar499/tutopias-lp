@@ -1375,7 +1375,33 @@ h2 {
   .footer-tetx {
     padding: 14px 10px;
   }
-
+.box2 {
+    margin-top: 0px;
+}
+.sk{
+  padding: 10px;
+}
+.stroke-text {
+    font-size: 44px;
+  }
+  .software h5 {
+    color: #fff;
+    font-size: 16px;
+}
+.hitect {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pro-text4, .pro-text3, .pro-text2, .pro-text1{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 360px) and (max-width: 430px) {
