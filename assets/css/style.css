@@ -1419,11 +1419,12 @@ h2 {
     transform: translate(-50%, -50%);
 }
 .pro-text4, .pro-text3, .pro-text2, .pro-text1{
-        position: relative;
+        position: inherit;
         bottom: 0;
         right: 0;
         left: 0;
         transform: none;
+        height: 100%;
         margin-bottom: 20px;
     }
 }
@@ -1432,7 +1433,9 @@ h2 {
   .win-img {
     margin-top: -437px;
   }
-
+.form-wrappers{
+  margin-bottom: ;
+}
   .wina-text {
     top: -151%;
   }
