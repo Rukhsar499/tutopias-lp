@@ -123,8 +123,8 @@ a {
 .smatre{
     overflow:hidden;
     white-space:nowrap;
-    border-right:3px solid #fff;
-    width:0;
+    border-right:2px solid #fff;
+    width:100%;
     animation:
         typing 3s steps(25,end) forwards,
         blink .7s infinite;
@@ -132,7 +132,7 @@ a {
 
 @keyframes typing{
     from{width:0}
-    to{width:43%}
+    to{width:40%}
 }
 
 @keyframes blink{
@@ -178,12 +178,26 @@ a {
     justify-content:center;
 }
 
-.form-wrapper{
+/* .form-wrapper{
    background-color:#ffffff77;
     padding: 10px;
     display: inline-block;
     border-radius:25px;
+} */
+
+
+.form-wrapper{
+      width: 25%;
+    position: absolute;
+    top: 15%;
+    right: 16%;
+    z-index: 1;
+    background: #ffffff34;
+    padding: 15px;
+    border-radius: 25px;
 }
+
+
 .form-wrappers{
    background-color:#f3cf3f9f;
     padding: 10px;
@@ -197,7 +211,6 @@ a {
     border-radius:25px;
     padding:30px 20px;
     width:100%;
-    max-width:450px;
 }
 
 .admission-form h2{
@@ -232,16 +245,20 @@ a {
 }
 .banner-text{
   position: absolute;
-  bottom: 10%;
+  bottom: 16%;
   width: 40%;
   left: 10%;
 }
-.banner{
-  position: relative;
+
+
+
+.banner .row{
    display: flex;
-    align-items: center;
+    align-items: end;
     overflow: hidden;
 }
+
+
 .banner::before{
     content: "";
     position: absolute;
@@ -308,7 +325,7 @@ a {
 /* Tablet */
 @media(max-width:991px){
     .admission-form{
-        max-width:420px;
+        width:100%;
     }
 }
 
@@ -320,7 +337,7 @@ a {
     }
 
     .admission-form{
-        max-width:100%;
+        width:100%;
         padding:25px 15px;
     }
 
@@ -387,10 +404,10 @@ a {
 }
 
 .banner {
- 
   padding: 100px 0px 50px 0px;
   height: 90vh;
   position: relative;
+  overflow: hidden;
 }
 
 .wbs {
@@ -439,7 +456,8 @@ a {
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
 .brands .item{
-    height:100px;
+  width: 150px;
+    height:150px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -1259,6 +1277,12 @@ h2 {
     padding: 60px 0px 60px 0px;
   }
 
+  .form-wrapper{
+    margin: -80px auto 60px auto;
+      width: 85%;
+    position: inherit; 
+}
+
   h2 {
     font-size: 27px;
   }
@@ -1412,4 +1436,32 @@ h2 {
   .wina-text {
     top: -151%;
   }
+
+  .header .container .bn-mob{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner::before{
+    background: url('../img/mob-bnr-tutopia.webp') center center/cover no-repeat;
+}
+
+  .form-wrapper{
+    margin: -100px auto 60px auto;
+      width: 94%;
+}
+
+.banner-text{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  left: 4%;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:60%}
+}
+
+
 }
