@@ -699,11 +699,16 @@ a {
 
     .program-card {
         min-height: auto;
-        padding: 25px 18px 18px;
+        padding: 30px 15px 18px;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
 
     .program-for::after {
         display: none;
+    }
+    .pro-box img{
+      margin-bottom: 20px;
     }
 }
 .yellow-bx {
@@ -1434,7 +1439,7 @@ h2 {
     margin-top: -437px;
   }
 .form-wrappers{
-  margin-bottom: ;
+  margin-top: 20px;
 }
   .wina-text {
     top: -151%;
