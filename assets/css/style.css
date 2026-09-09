@@ -2169,4 +2169,8 @@ background: linear-gradient(61deg, rgba(5, 109, 182, 1) 0%, rgba(5, 109, 182, 1)
     padding-bottom: 0;
     margin-bottom: 0;
   }
+  .features-bar-section {
+    
+    margin-top: 0px;
+}
 }
