@@ -8,7 +8,7 @@ document.querySelectorAll(".enquiryForm").forEach(function (form) {
         if (submitBtn.disabled) {
             return;
         }
-        
+
         submitBtn.disabled = true;
         submitBtn.innerHTML = `
             <span class="spinner-border spinner-border-sm me-2"></span>
@@ -55,30 +55,29 @@ document.querySelectorAll(".enquiryForm").forEach(function (form) {
         // Pehle Network me dekhne ke liye
         console.log("API Payload:", payload);
 
-        fetch("leads.php", {
+        fetch("api/submit-form.php", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
-                "DATA_KEY": "b77a5c561934e089STVa54e08c5619"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(payload)
         })
-        .then(response => response.json())
-       .then(data => {
+            .then(response => response.json())
+            .then(data => {
 
-            console.log("API Response:", data);
+                console.log("API Response:", data);
 
-            if (data.status == 200 || data.error == 0) {
-                window.location.href = "thankyou.html";
-            } else {
-                alert("Form submission failed!");
-            }
+                if (data.status == 200 || data.error == 0) {
+                    window.location.href = "thankyou.html";
+                } else {
+                    alert("Form submission failed!");
+                }
 
-        })
-        .catch(error => {
-            console.error(error);
-            alert("Something went wrong!");
-        });
+            })
+            .catch(error => {
+                console.error(error);
+                alert("Something went wrong!");
+            });
 
     });
 
