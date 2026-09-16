@@ -1,171 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Manipal Online University</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Fonts & Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Icons / Plugins -->
+    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/custom.css" rel="stylesheet" />
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Auto Redirect Script -->
+    <script type="text/javascript"> 
+        setTimeout(function () { window.location.href = '/'; }, 10000);
+    </script>
+    
+    <!-- Google Conversion Tags -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-429237420"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-429237420');
+    </script>
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-429237420/YjPFCMib0c8cEKzJ1swB'});
+    </script>
+    
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xntred7ddf");
+</script>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Base Reset with New Soft Pastel Orange Canvas */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff3ed; /* Soft Pastel Orange background */
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
 
-<style>
+        /* Abstract Dynamic Background Blobs/Pattern */
+        .bg-blob-1 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 87, 34, 0.12) 0%, rgba(255, 87, 34, 0) 70%);
+            top: -10%;
+            left: -10%;
+            z-index: 0;
+        }
+        .bg-blob-2 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, rgba(255, 193, 7, 0) 70%);
+            bottom: -20%;
+            right: -10%;
+            z-index: 0;
+        }
 
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-}
+        .thankyou-section {
+            width: 100%;
+            padding: 40px 15px;
+            position: relative;
+            z-index: 1;
+        }
 
-/* Background Image */
-.thankyou-section {
-    min-height: 100vh;
-    background: url('./assets/img/universty.webp') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
+        /* Premium Minimalist White Glass Card Wrapper */
+        .thankyou-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 32px;
+            padding: 4.5rem 4rem;
+            position: relative;
+            box-shadow: 0 30px 60px -20px rgba(230, 74, 25, 0.08), 
+                        0 10px 20px -10px rgba(0, 0, 0, 0.02);
+        }
 
-/* 🔥 Blur + Dark Overlay */
-.thankyou-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
+        /* Fluid Pattern Accent Strip Inside Card */
+        .thankyou-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ff5722, #ffb300);
+            border-top-left-radius: 32px;
+            border-bottom-left-radius: 32px;
+        }
 
-    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+        /* Premium Orange Tinted Badge Style */
+        .badge-custom {
+            background: rgba(255, 87, 34, 0.08);
+            color: #d84315; /* Vibrant Deep Pastel Orange */
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 87, 34, 0.15);
+            text-transform: uppercase;
+        }
 
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+        /* Elegant High-Contrast Typography */
+        .thankyou-title {
+            font-size: 4.25rem;
+            font-weight: 800;
+            color: #1e293b;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+        }
 
-    z-index: 1;
-}
+        .thankyou-title span {
+            color: #ff5722;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
 
-/* 🔥 Highlight Glass Card */
-.glass-card {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    padding: 50px 40px;
-    text-align: center;
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
 
-    background: #0074bc;
-    border-radius: 20px;
+        .thankyou-text {
+            font-size: 1.3rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
 
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+        .thankyou-text strong {
+            color: #ff5722;
+            font-weight: 700;
+        }
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+        /* Clean Minimalist Redirect notice */
+        .redirect-notice {
+            font-size: 0.9rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+        }
 
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-}
+        .spinner-loader {
+            width: 20px;
+            height: 20px;
+            border: 2.5px solid rgba(255, 87, 34, 0.15);
+            border-radius: 50%;
+            border-top-color: #ff5722;
+            animation: spin 0.8s linear infinite;
+        }
 
-/* Glass Card */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
 
+        /* Premium Student Transparent Image Interaction */
+        .student-hero-img {
+            max-height: 400px;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 35px rgba(255, 87, 34, 0.12));
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
 
-/* Text */
-.thankyou-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 15px;
-}
+        .thankyou-card:hover .student-hero-img {
+            transform: translateY(-8px) scale(1.02);
+            filter: drop-shadow(0 25px 45px rgba(255, 87, 34, 0.18));
+        }
 
-.thankyou-subtitle {
-    font-size: 20px;
-    color: #e0e0e0;
-}
+        /* Responsive UI Framework overrides */
+        @media (max-width: 991.98px) {
+            .thankyou-card {
+                padding: 4rem 2rem;
+                text-align: center;
+            }
+            .thankyou-card::before {
+                width: 100%;
+                height: 8px;
+                border-top-left-radius: 32px;
+                border-top-right-radius: 32px;
+                border-bottom-left-radius: 0;
+            }
+            .thankyou-title {
+                font-size: 3.25rem;
+            }
+            .student-hero-img {
+                margin-top: 3.5rem;
+                max-height: 320px;
+            }
+            .redirect-notice {
+                justify-content: center;
+            }
+        }
 
-.thankyou-text {
-    font-size: 16px;
-    color: #dcdcdc;
-    margin-top: 15px;
-}
-
-/* Divider */
-.divider {
-    width: 120px;
-    height: 1px;
-    background: rgba(255,255,255,0.4);
-    margin: 20px auto;
-    position: relative;
-}
-
-.divider::after {
-    content: "•";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-}
-
-/* Side Images */
-.side-img {
-    position: absolute;
-    bottom: 40px;
-    width: 200px;
-    opacity: 0.12;
-    z-index: 1;
-}
-
-.left-img {
-    left: 5%;
-}
-
-.right-img {
-    right: 5%;
-}
-
-/* Responsive */
-@media(max-width:768px){
-    .thankyou-title {
-        font-size: 32px;
-    }
-
-    .glass-card {
-        padding: 30px 20px;
-    }
-
-    .side-img {
-        width: 120px;
-    }
-}
-
-@media(max-width:576px){
-    .side-img {
-        display: none;
-    }
-}
-
-</style>
+        @media (max-width: 576px) {
+            .thankyou-title {
+                font-size: 2.5rem;
+            }
+            .thankyou-text {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<section class="thankyou-section">
+<!-- Decorative Ambient Patterns -->
+<div class="bg-blob-1"></div>
+<div class="bg-blob-2"></div>
 
-    <!-- Side Images -->
-    <img src="left.png" class="side-img left-img">
-    <img src="right.png" class="side-img right-img">
+<section class="thankyou-section mx-auto">
+    <div class="container">
+        <div class="thankyou-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="row align-items-center">
+                
+                <!-- LEFT TYPOGRAPHY COLUMN -->
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="badge-custom">Admissions Open 2026-27</div>
+                    <h1 class="thankyou-title">
+                        Thank you<span>!</span>
+                    </h1>
+                    <p class="thankyou-text">
+                        Thank you for your enquiry.<br>
+                        Our team will contact you shortly to guide you on 
+                        <strong>fees</strong> and the <strong>admission process</strong>.
+                    </p>
+                    
+                    <!-- Progress Loader Component -->
+                    <div class="redirect-notice">
+                        <div class="spinner-loader"></div>
+                        <span>Redirecting back to home page shortly...</span>
+                    </div>
+                </div>
 
-    <!-- Glass Card -->
-    <div class="glass-card">
-        <h1 class="thankyou-title">Thank You For Your Interest!</h1>
+                <!-- RIGHT INTERACTIVE IMAGE COLUMN -->
+                <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="300">
+                    <img src="assets/img/Masters-of-Computer-Applications-.png" alt="Students" class="img-fluid student-hero-img">
+                </div>
 
-        <p class="thankyou-subtitle">
-            Your submission has been received
-        </p>
-
-        <div class="divider"></div>
-
-        <p class="thankyou-text">
-            We will review your submission and respond as soon as possible.
-           
-        </p>
+            </div>
+        </div>
     </div>
-
 </section>
+
+<script>
+window.addEventListener("load", function () {
+
+    if (localStorage.getItem("downloadBrochure") === "yes") {
+
+        setTimeout(function () {
+
+            const link = document.createElement("a");
+            link.href = "assets/img/animation.pdf"; // PDF path
+            link.download = "animation.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            localStorage.removeItem("downloadBrochure");
+
+        }, 2000);
+
+    }
+
+});
+</script>
+
+<!-- AOS Script System Initializer -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
 
 </body>
 </html>

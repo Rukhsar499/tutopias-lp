@@ -32,7 +32,7 @@ document.querySelectorAll(".enquiryForm").forEach(function (form) {
                 "email_id": email,
                 "class_name": qualification,
                 "college_id": 9,
-                "college_name": "Manipal",
+                "college_name": "Tutopia",
                 "location": "",
                 "postal_code": "",
                 "query": course,
